@@ -59,7 +59,6 @@ empleos :
     - nombre : Start Tailscale
       correr : |
         Write-Host "Iniciando Tailscale..." -ForegroundColor Green
-        & "C:\Archivos de programa\Tailscale\tailscale.exe" up --authkey ${{ secrets.TAILSCALE_AUTH_KEY }} --hostname "enigmano-${{ github.run_id }}"
         Inicio-Sueño -Segundos 15
         
     - nombre : Obtener IP de Tailscale
